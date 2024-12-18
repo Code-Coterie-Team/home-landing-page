@@ -10,7 +10,7 @@ const Choice=()=>{
     const [currentIndex,setCurrentIndex]=useState(0)
     if (isLoading) return <div>Loading</div>;
     if (isError) return <div>Erorr Fetching Data!</div>
-    const image=['./src/assets/r1.png','./src/assets/r2.png','./src/assets/r3.png']
+    
     const itemPerPage=4 ;
    
     
