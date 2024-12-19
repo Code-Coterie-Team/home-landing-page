@@ -17,6 +17,8 @@ export default {
         fontcolor:' #8c8b8b',
         buttoncolor:"#eef",
         lightblue:'#eeeeff',
+        bordercolor:'rgba(255, 255, 255, .12)',
+        fontblucolor:'#1f3e72',
       }
     },
   },
