@@ -16,6 +16,7 @@ export default {
         lightorange:'#ffb978',
         fontcolor:' #8c8b8b',
         buttoncolor:"#eef",
+        lightblue:'#eeeeff',
       }
     },
   },
