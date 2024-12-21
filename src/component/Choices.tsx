@@ -18,11 +18,11 @@ const Choice=()=>{
     const handelPrevious=()=> setCurrentIndex((prev)=> prev-itemPerPage)
     
     return(
-        <div className="flex flex-col  gap-6 p-16 ">
+        <div className="flex flex-col  gap-6 pt-14 ">
             <div className="font-semibold flex justify-between">
                 <div>
-                    <span className="text-lightorange text-xl">Best Choices</span>
-                    <h2 className="text-primary  text-2xl"> Popular Residencies</h2>
+                    <span className="text-lightorange text-2xl">Best Choices</span>
+                    <h2 className="text-primary  text-4xl"> Popular Residencies</h2>
                 </div>
                 <div className="flex gap-2">
                     

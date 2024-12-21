@@ -4,7 +4,7 @@ import Data from "./Data";
 
 const Wraper=()=>{
     return(
-    <div className="h-2/6 bg-black p-16 w-full flex gap-28 z-10">
+    <div className="h-2/6 bg-black p-16 w-full flex gap-28 z-10 relative">
         <div className="flex flex-col gap-28 ">
             
                 <h1 className="text-white text-6xl font-semibold relative  ">Discover <br />Most Suitable <br />Property</h1>

@@ -4,12 +4,12 @@ import OptionOfValue from "./Optionvlaue";
 const Value=()=>{
 
     return(
-        <div className="flex gap-36 p-16">
-            <div className="border-8 border-gray-300 rounded-t-full  w-2/4 ">
+        <div className="flex gap-36 pt-14 ">
+            <div className="border-8 border-gray-300 rounded-t-full h-[35rem] w-2/5 ">
                 <img src="./src/assets/value.png" alt=""  className="w-full h-full rounded-t-full"/>
             </div>
-            <div className="flex flex-col gap-8   w-2/4">
-                <span className="text-pureorange text-4xl font-extrabold  ">Our Value</span>
+            <div className="flex flex-col gap-6 h-[35rem]  w-2/4">
+                <span className="text-pureorange text-2xl font-extrabold  ">Our Value</span>
                 <p className="text-fontblucolor text-4xl font-extrabold  ">Value We Give to You</p>
                 <p className="text-gray-500 ">We always ready to help by providijng the best services for you . <br />
                     We beleive a good blace to live can make your life better

@@ -1,10 +1,11 @@
 import Header from "./Header"
-
+import Wraper from "./Wraper";
 
 const Layout=( props:any)=>{
     return(
-        <div className=" relative">
+        <div >
             <Header/>
+            <Wraper />
             {props.children}
         </div>
     )
