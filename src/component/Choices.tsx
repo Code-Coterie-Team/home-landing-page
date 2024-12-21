@@ -12,7 +12,7 @@ const Choice=()=>{
     if (isError) return <div>Erorr Fetching Data!</div>
     
     const itemPerPage=4 ;
-    const numbers = [1, 2, 3]
+   
     
     const handleNext=()=> setCurrentIndex((prev)=> prev+itemPerPage);
     const handelPrevious=()=> setCurrentIndex((prev)=> prev-itemPerPage)
@@ -31,10 +31,10 @@ const Choice=()=>{
                 </div>
             </div>
         
-            <div className="grid  grid-cols-4 gap-14">
-                {data?.slice(currentIndex,currentIndex+itemPerPage).map ((item:any,index)=>(
+            <div className="grid  p-6  grid-cols-4 gap-14">
+                {data?.slice(currentIndex,currentIndex+itemPerPage).map ((item:any)=>(
                     <PopulaRchoice 
-                    image={Math.floor(Math.random() * numbers.length)}
+                    image={item.image}
                     name={item.name}
                     price={item.price}
                     adress={item.adress}
