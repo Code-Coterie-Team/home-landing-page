@@ -1,7 +1,7 @@
 import { useState } from 'react'
 
 import Wraper from './component/Wraper';
-import Layout from './component/Layot';
+import Layout from './component/Layuot';
 import Company from './component/Company';
 import Choice from './component/Choices';
 import Value from './component/Valueofstate';
@@ -15,7 +15,8 @@ function App() {
     <Layout >
      
         <div className='p-12 flex flex-col gap-10'>
-
+         
+          
           <Company />
           <Choice />
           <Value/>

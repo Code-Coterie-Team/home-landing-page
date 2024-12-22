@@ -14,8 +14,9 @@ const Choice=()=>{
     const itemPerPage=4 ;
    
     
-    const handleNext=()=> setCurrentIndex((prev)=> prev+itemPerPage);
-    const handelPrevious=()=> setCurrentIndex((prev)=> prev-itemPerPage)
+    const handleNext=()=> setCurrentIndex((prev)=> prev+1);
+    console.log(currentIndex);
+    const handelPrevious=()=> setCurrentIndex((prev)=> prev-1)
     
     return(
         <div className="flex flex-col  gap-6 pt-14 ">

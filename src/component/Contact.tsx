@@ -10,10 +10,10 @@ const Contact=()=>{
                 <span className="text-fontcolor text-base">We always ready to help by providijng the best services for you. <br />
                  We beleive a good blace to live can make your life better</span>
                 <div className="grid grid-cols-2 gap-4" >
-                    <ContactWay/>
-                    <ContactWay />
-                    <ContactWay />
-                    <ContactWay />
+                    <ContactWay item="./src/assets/phone.svg" name='Call'/>
+                    <ContactWay item ="./src/assets/chat.svg" name='Chat' />
+                    <ContactWay item="./src/assets/chat.svg" name='Video Call' />
+                    <ContactWay item="./src/assets/message.svg" name='Message' />
                 </div>
             </div>
             <div className="h-[32rem] w-2/5 rounded-t-full"><img src="./src/assets/contact.jpg" alt="" className="h-full w-full rounded-t-full" /></div>

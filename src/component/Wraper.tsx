@@ -4,18 +4,19 @@ import Data from "./Data";
 
 const Wraper=()=>{
     return(
-    <div className="h-2/6 bg-black p-16 w-full flex gap-28 z-10 relative">
-        <div className="flex flex-col gap-28 ">
+    <div className="h-2/6 bg-black p-24 w-full flex gap-28 z-10 relative">
+        <div className="flex flex-col gap-28 relative ">
             
-                <h1 className="text-white text-6xl font-semibold relative  ">Discover <br />Most Suitable <br />Property</h1>
-                <div className="w-14 h-14 rounded-full bg-gradient-to-tr bg-lightorange
-                from-0% bg-pureorange top-28  left-80 absolute  "></div>
+                <h1 className="text-white text-6xl font-semibold ">Discover <br />Most Suitable <br />Property</h1>
+                <div className="w-14 h-14 rounded-full bg-gradient-to-tr  bg-lightorange
+                from-0% bg-pureorange top left-64 absolute  -z-10 "></div>
                 <div className="pt-10">
-                    <span className="text-fontcolor ">
+                    <span className="text-fontcolor">
                     Find a variety of properties that suit you very <br /> easilty
                     Forget all difficulties in finding a residence for you
                     </span>
                 </div>
+                
                 <div className=" w-full  bg-white  flex justify-between rounded  border-2 border-gray-400 p-2 ">
                     <img src="./src/assets/map.svg" alt="" className="fill-blue-500" />
                     <input className=" border-none border-white" type="text" />

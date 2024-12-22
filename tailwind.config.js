@@ -19,6 +19,7 @@ export default {
         lightblue:'#eeeeff',
         bordercolor:'rgba(255, 255, 255, .12)',
         fontblucolor:'#1f3e72',
+        bgblur:"rgba(255, 255, 255, 0.52)"
       }
     },
   },
