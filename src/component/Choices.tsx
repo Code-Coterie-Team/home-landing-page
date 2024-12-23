@@ -1,22 +1,37 @@
-import { useState } from "react";
-import React from "react";
+import React, { useRef, useState } from "react";
+
 import { getAllData } from "../api";
 import PopulaRchoice from "./Popularchoice";
 
 
-
-const Choice=()=>{
+const Choice =()=>{
     const {data,isLoading,isError}=getAllData();
-    const [currentIndex,setCurrentIndex]=useState(0)
+    
     if (isLoading) return <div>Loading</div>;
     if (isError) return <div>Erorr Fetching Data!</div>
-    
-    const itemPerPage=4 ;
-   
-    
-    const handleNext=()=> setCurrentIndex((prev)=> prev+1);
-    console.log(currentIndex);
-    const handelPrevious=()=> setCurrentIndex((prev)=> prev-1)
+    const itemsPerPage=4
+    const scrollContainerRef = useRef<HTMLDivElement>(null);
+    const itemWidth =200;
+    const scrollLeft = () => {
+        if(scrollContainerRef.current){
+            scrollContainerRef.current.scrollBy({
+                left:-itemWidth* itemsPerPage,
+                behavior:"smooth",
+            })
+        }
+        
+    };
+
+    const scrollRight = () => {
+        if(scrollContainerRef.current){
+            scrollContainerRef.current.scrollBy({
+                left:itemWidth * itemsPerPage,
+                behavior:"smooth",
+            })
+        }
+    };
+
+
     
     return(
         <div className="flex flex-col  gap-6 pt-14 ">
@@ -27,20 +42,26 @@ const Choice=()=>{
                 </div>
                 <div className="flex gap-2">
                     
-                    <button className="w-8 h-8 bg-buttoncolor rounded" onClick={handelPrevious} > &lt;</button>
-                    <button className="w-8 h-8 rounded shadow-md" onClick={handleNext}> &gt; </button>
+                    <button className="w-8 h-8 bg-buttoncolor rounded" onClick={scrollLeft}> &lt;</button>
+  
+ 
+                    <button className="w-8 h-8 rounded shadow-md" onClick={scrollRight} > &gt; </button>
                 </div>
             </div>
         
-            <div className="grid  p-6  grid-cols-4 gap-14">
-                {data?.slice(currentIndex,currentIndex+itemPerPage).map ((item:any)=>(
-                    <PopulaRchoice 
-                    image={item.image}
-                    name={item.name}
-                    price={item.price}
-                    adress={item.adress}
-                    />
-                ))}
+            <div className=" flex w-screen  ustify-center items-center ">
+                
+                <div ref={scrollContainerRef} className="flex  gap-10 overflow-x-scroll w-11/12  ">
+                         { data ?.map((item: any) => (
+                            <PopulaRchoice
+                            image={item.image}
+                            name={item.name}
+                            price={item.price}
+                            adress={item.adress}
+                        />
+                        ))}
+                    </div>
+                
             </div>
         </div>
     )
