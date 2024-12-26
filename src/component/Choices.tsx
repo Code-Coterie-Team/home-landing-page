@@ -5,17 +5,18 @@ import PopulaRchoice from "./Popularchoice";
 
 
 const Choice =()=>{
+    const scrollContainerRef = useRef<HTMLDivElement>(null);
     const {data,isLoading,isError}=getAllData();
     
     if (isLoading) return <div>Loading</div>;
     if (isError) return <div>Erorr Fetching Data!</div>
-    const itemsPerPage=4
-    const scrollContainerRef = useRef<HTMLDivElement>(null);
-    const itemWidth =200;
+    
+   
+    const itemWidth =300;
     const scrollLeft = () => {
         if(scrollContainerRef.current){
             scrollContainerRef.current.scrollBy({
-                left:-itemWidth* itemsPerPage,
+                left:-itemWidth,
                 behavior:"smooth",
             })
         }
@@ -25,7 +26,7 @@ const Choice =()=>{
     const scrollRight = () => {
         if(scrollContainerRef.current){
             scrollContainerRef.current.scrollBy({
-                left:itemWidth * itemsPerPage,
+                left:itemWidth,
                 behavior:"smooth",
             })
         }
@@ -49,10 +50,10 @@ const Choice =()=>{
                 </div>
             </div>
         
-            <div className=" flex w-screen  ustify-center items-center ">
+            <div ref={scrollContainerRef} className="flex  gap-8 overflow-hidden w-full  ">
                 
-                <div ref={scrollContainerRef} className="flex  gap-10 overflow-x-scroll w-11/12  ">
-                         { data ?.map((item: any) => (
+                
+                        { data ?.map((item: any) => (
                             <PopulaRchoice
                             image={item.image}
                             name={item.name}
@@ -60,7 +61,7 @@ const Choice =()=>{
                             adress={item.adress}
                         />
                         ))}
-                    </div>
+                    
                 
             </div>
         </div>

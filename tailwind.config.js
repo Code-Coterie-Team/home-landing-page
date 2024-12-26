@@ -10,6 +10,7 @@ export default {
         primary:'#1f3e72',
         shdaow:'0px 23px 21px -8px rgba(136, 160, 255, .25)',
         secondry:'rgba(255, 255, 255, .78)',
+        wrapercolor:"#131110",
         firstblue:'#4066ff',
         secondblue:'#2949c6',
         pureorange:' #ff922d',
