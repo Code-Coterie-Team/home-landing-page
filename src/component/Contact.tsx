@@ -3,7 +3,7 @@ import ContactWay from "./Contatway"
 
 const Contact=()=>{
     return(
-        <div className="grid grid-cols-1 gap-8 md:grid-cols-2 md:gap-20">
+        <div className="grid grid-cols-1 gap-8 md:grid-cols-2 md:gap-40">
             <div className="flex flex-col gap-4">
                 <p className="text-pureorange text-xl font-semibold">Our Contact Us</p>
                 <p className="text-fontblucolor text-4xl font-semibold">Easy to contact us</p>
