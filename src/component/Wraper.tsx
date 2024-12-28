@@ -1,15 +1,34 @@
+import { useEffect, useState } from "react";
 import Button from "./Button";
 import Data from "./Data";
 
 
 const Wraper=()=>{
+    const [style,setStyle]=useState({
+        transform:"translateY(100%)",
+        transition:"transform 1s ease-in-out"
+        
+    })
+    const[imageStyle,setImageStyle]=useState({
+        transform:"translateX(100%)",
+        transition:"transform 1s ease-in-out "
+    })
+    useEffect(() =>{
+        const timer=setTimeout(() => {
+            setStyle({ transform: "translateY(0%)", transition: "transform 1s ease-in-out"})
+            setImageStyle({ transform: "translateX(0%)", transition:"transform 1s ease-in-out"})
+        }, 100)
+        return () => clearTimeout(timer)
+        
+    
+},[])
     return(
-    <div className="h-2/6   bg-wrapercolor p-24 w-full  grid grid-cols-1  md:grid-cols-2  gap-28 z-10  relative">
-        <div className="flex flex-col gap-28 relative ">
+    <div className=" bg-wrapercolor p-20 w-full  grid grid-cols-1  md:grid-cols-2  gap-28 z-10  relative">
+        <div className="flex flex-col gap-10 relative ">
             
-                <h1 className="text-white text-6xl font-semibold ">Discover <br />Most Suitable <br />Property</h1>
-                <div className="w-14 h-14 rounded-full bg-gradient-to-tr  bg-lightorange
-                from-0% to-100% left-64 absolute  -z-10 "></div>
+                <h1 className="text-white text-6xl font-semibold   " style={style}>Discover <br />Most Suitable <br />Property</h1>
+                <div className=" size-14 rounded-full bg-gradient-to-tr  bg-pureorange
+                from-0% to-100% left-60 absolute  -z-10 "></div>
                 <div className="pt-10">
                     <span className="text-fontcolor">
                     Find a variety of properties that suit you very <br /> easilty
@@ -23,14 +42,14 @@ const Wraper=()=>{
                     <Button text="Search"/>
                 </div>
                 <div className="flex  gap-4">
-                    <Data count={9000} subject="Premium Product"/>
-                    <Data count={2000} subject="Happy Customer"/>
-                    <Data count={28} subject="Awards Winning"/>
+                    <Data count={8800} subject="Premium Product"/>
+                    <Data count={1900} subject="Happy Customer"/>
+                    <Data count={25} subject="Awards Winning"/>
                 </div>
 
             
         </div>
-        <div className="  rounded-t-full border-8 border-stone-700 ">
+        <div className=" h-full rounded-t-full border-8 border-stone-700 " style={imageStyle}>
             <img src="./src/assets/hero-image.png" className="w-full h-full rounded-t-full " alt="" />
         </div>
     </div>

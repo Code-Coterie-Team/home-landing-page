@@ -32,7 +32,7 @@ function App() {
         <Wraper />
 
       </div>
-        <div className='p-12 flex flex-col gap-10'>
+        <div className='p-12 flex flex-col gap-12'>
         
           
         <Company />
