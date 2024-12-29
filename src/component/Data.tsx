@@ -33,7 +33,7 @@ const Data : React.FC<DataProps>=({count,subject})=>{
        <div className="flex flex-col gap-1 pt-10">
         <div className="flex gap-8 w-full justify-center">
             <span className="text-white text-2xl  md:text-4xl">{counter}</span>
-            <Plus/>
+            <div><Plus /></div>
         </div>
         <div className="w-full">
             <span className="text-fontcolor ">{subject}</span>

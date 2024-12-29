@@ -38,7 +38,7 @@ const Residencie =()=>{
         <div className="flex flex-col  gap-6 pt-14 " id="residencies">
             <div className="font-semibold flex justify-between">
                 <div>
-                    <span className="text-lightorange text-2xl">Best Choices</span>
+                    <span className="text-pureorange text-2xl">Best Choices</span>
                     <h2 className="text-primary  text-4xl"> Popular Residencies</h2>
                 </div>
                 <div className="flex gap-2">

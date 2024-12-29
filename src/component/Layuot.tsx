@@ -1,13 +1,14 @@
 import Header from "./Header"
 import Wraper from "./Wraper";
-import { useEffect, useRef } from "react";
-import { useLocation, useNavigate } from "react-router";
+import { ReactNode, useEffect, useRef } from "react";
+import { useLocation } from "react-router";
 
 
-const Layout=( props:any)=>{
+const Layout=(props:{children:ReactNode})=>{
     const location=useLocation()
     useEffect(() => {
         const hash = location.hash;
+        console.log(hash);
         if (hash) {
             const element = document.querySelector(hash);
             if (element) {

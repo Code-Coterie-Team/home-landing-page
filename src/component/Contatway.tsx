@@ -1,7 +1,12 @@
+import React, { ReactNode } from "react";
+
+interface ContactProps{
+    name:string;
+    item :ReactNode
+}
 
 
-
-const ContactWay=(props:any)=>{
+const ContactWay=(props:ContactProps)=>{
 
     return(
         <div className="border flex flex-col gap-2 p-6 rounded transform transition hover:scale-110

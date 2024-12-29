@@ -1,15 +1,9 @@
 import React from "react";
 import Button from "./Button";
 
-// interface IHeaderProps{
-//   onNavigateResidencies:()=>void,
-//   onNavigateOurValue:()=>void,
-//   onNavigateContactUs:()=> void,
-//   onNavigateGetStart:()=>void,
-// }
 
 
-const Header:React.FC<any>=()=>{
+const Header=()=>{
     return(
         <div className="  bg-wrapercolor flex  justify-between w-full  content-center  p-4  sticky top-0 z-40">
             <div className="flex justify-center h-12 pb-4  "><img src="./src/assets/logo.png" alt="" /></div>

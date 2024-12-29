@@ -11,18 +11,7 @@ import Footer from './component/Footer';
 import Header from './component/Header';
 function App() {
 
-  const residenceRef=useRef<HTMLDivElement>(null);
-  const contactRef = useRef<HTMLDivElement>(null);
-  const valuRef = useRef<HTMLDivElement>(null);
-  const getstartRef = useRef<HTMLDivElement>(null);
-  const handelRoute = (ref: React.RefObject<HTMLDivElement>, hash: string) => {
-    if (ref.current) {
-      ref.current.scrollIntoView({
-        behavior: "smooth"
-      });
-      window.location.hash = hash;
-    }
-  }
+ 
   return (
      <Layout>
       
