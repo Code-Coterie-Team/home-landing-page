@@ -13,7 +13,7 @@ interface IAllData{
 }
 
 export const getAllData=()=>{
-    return useQuery<IAllData[]> ({
+    return useQuery({
         queryKey:['getAllData'],
         queryFn:async()=>{
             const response= await axios.get<IAllData[]>(baseUrl);

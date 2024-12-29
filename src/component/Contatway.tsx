@@ -7,7 +7,7 @@ const ContactWay=(props:any)=>{
         <div className="border flex flex-col gap-2 p-6 rounded transform transition hover:scale-110
             hover:shadow-indigo-400 hover:shadow-sm">
             <div className="flex gap-4">
-                <img src={props.item} alt="" />
+                {props.item}
                 <div className="flex flex-col gap-2">
                     <span className="text-fontblucolor font-bold">{props.name}</span>
                     <span className="text-fontcolor">021 123 145 14</span>

@@ -3,10 +3,10 @@ import { useRef, useState } from 'react'
 import Wraper from './component/Wraper';
 import Layout from './component/Layuot';
 import Company from './component/Company';
-import Choice from './component/Choices';
+import Choice from './component/Residencie';
 import Value from './component/Valueofstate';
 import Contact from './component/Contact';
-import Summary from './component/Summary';
+import Summary from './component/Getstart';
 import Footer from './component/Footer';
 import Header from './component/Header';
 function App() {
@@ -24,25 +24,17 @@ function App() {
     }
   }
   return (
-     <>
-      <div className="  relative" >
-        <div className="size-80  rounded-3xl absolute blur-3xl bg-bgblur z-50"></div>
-        <Header onNavigateContactUs={() => handelRoute(contactRef, "#contact-us")} onNavigateGetStart={() => handelRoute(getstartRef, '#get-start')}
-          onNavigateOurValue={() => handelRoute(valuRef, '#value')} onNavigateResidencies={() => handelRoute(residenceRef, "#residencies")} />
-        <Wraper />
-
-      </div>
+     <Layout>
+      
         <div className='p-12 flex flex-col gap-12'>
-        
-          
-        <Company />
-        <div ref={residenceRef}><Choice /></div>
-        <div ref={valuRef}><Value /></div>
-        <div ref={contactRef}><Contact /></div>
-        <div ref={getstartRef}><Summary /></div>
+          <Company />
+          <Choice />
+          <Value />
+          <Contact />
+          <Summary />
           <Footer/>
         </div>
-    </>
+    </Layout>
    
   )
 }

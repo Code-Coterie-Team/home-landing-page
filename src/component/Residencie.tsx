@@ -4,7 +4,7 @@ import { getAllData } from "../api";
 import PopulaRchoice from "./Popularchoice";
 
 
-const Choice =()=>{
+const Residencie =()=>{
     const scrollContainerRef = useRef<HTMLDivElement>(null);
     const {data,isLoading,isError}=getAllData();
     
@@ -35,7 +35,7 @@ const Choice =()=>{
 
     
     return(
-        <div className="flex flex-col  gap-6 pt-14 ">
+        <div className="flex flex-col  gap-6 pt-14 " id="residencies">
             <div className="font-semibold flex justify-between">
                 <div>
                     <span className="text-lightorange text-2xl">Best Choices</span>
@@ -68,4 +68,4 @@ const Choice =()=>{
     )
 
 }
-export default Choice;
+export default Residencie;

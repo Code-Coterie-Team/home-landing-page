@@ -1,8 +1,8 @@
 
 
-const Summary =()=>{
+const Getstart=()=>{
      return(
-        <div className="w-full flex flex-col border-blue-500 border-4 items-center gap-4 
+         <div id="get-started" className="w-full flex flex-col border-blue-500 border-4 items-center gap-4 
         justify-center rounded h-72 text-center text-white bg-blue-700 ">
             <p className="font-semibold  text-2xl md:text-4xl">Get started with Homyz</p>
             <p className="text-fontcolor text-sm md:text-base">Subscribe and find super attractive price quotes from us.
@@ -13,4 +13,4 @@ const Summary =()=>{
         </div>
      )
 }
-export default Summary
+export default Getstart

@@ -1,5 +1,6 @@
 import React, { useDebugValue, useState } from "react"
 import { useEffect } from "react"
+import { Plus } from "../icon";
 interface DataProps{
     count:number,
     subject:string,
@@ -7,7 +8,7 @@ interface DataProps{
 const Data : React.FC<DataProps>=({count,subject})=>{
     const [counter,setCounter]=useState(count);
     useEffect(()=>{
-      if(count=== 8800 && counter< 9000){
+      if(count=== 8900 && counter< 9000){
 
         
         const timer=setTimeout(()=>{
@@ -31,8 +32,8 @@ const Data : React.FC<DataProps>=({count,subject})=>{
     return(
        <div className="flex flex-col gap-1 pt-10">
         <div className="flex gap-8 w-full justify-center">
-            <span className="text-white  text-4xl">{counter}</span>
-            <img src="./src/assets/plus.svg" alt="" />
+            <span className="text-white text-2xl  md:text-4xl">{counter}</span>
+            <Plus/>
         </div>
         <div className="w-full">
             <span className="text-fontcolor ">{subject}</span>

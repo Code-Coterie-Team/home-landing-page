@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import Button from "./Button";
 import Data from "./Data";
+import { Plus } from "../icon";
 
 
 const Wraper=()=>{
@@ -10,7 +11,7 @@ const Wraper=()=>{
         
     })
     const[imageStyle,setImageStyle]=useState({
-        transform:"translateX(100%)",
+        transform:"translateX(50%)",
         transition:"transform 1s ease-in-out "
     })
     useEffect(() =>{
@@ -42,7 +43,7 @@ const Wraper=()=>{
                     <Button text="Search"/>
                 </div>
                 <div className="flex  gap-4">
-                    <Data count={8800} subject="Premium Product"/>
+                    <Data count={8900} subject="Premium Product"/>
                     <Data count={1900} subject="Happy Customer"/>
                     <Data count={25} subject="Awards Winning"/>
                 </div>
