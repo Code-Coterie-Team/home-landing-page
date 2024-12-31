@@ -7,7 +7,7 @@ const Getstart=()=>{
             <p className="font-semibold  text-2xl md:text-4xl">Get started with Homyz</p>
             <p className="text-fontcolor text-sm md:text-base">Subscribe and find super attractive price quotes from us.
                 Find your residence soon</p>
-            <button className="border-white  border-2 rounded-md w-28 h-16 p-2">Get Started</button>
+            <button className="border-white  border-2 bg-blue-500 rounded-md w-28 h-10 p-2  transform transition-transform duration-300 hover:scale-110">Get Started</button>
             
 
         </div>

@@ -6,12 +6,12 @@ import Data from "./Data";
 
 const Wraper=()=>{
     const [style,setStyle]=useState({
-        transform:"translateY(100%)",
+        transform:"translateY(70%)",
         transition:"transform 1s ease-in-out"
         
     })
     const[imageStyle,setImageStyle]=useState({
-        transform:"translateX(50%)",
+        transform:"translateX(70%)",
         transition:"transform 1s ease-in-out "
     })
     useEffect(() =>{

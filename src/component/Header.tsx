@@ -9,7 +9,7 @@ const Header=()=>{
             <div className="flex justify-center h-12 pb-4  "><img src="./src/assets/logo.png" alt="" /></div>
             <div className=" flex  ">
                 
-                <ul className=" bg-white rounded flex absolute top-8  right-12 flex-col gap-8 text-l  text-black p-10 md:flex md:flex-row md:text-white md:gap-10 md:bg-transparent md:p-2">
+                <ul className=" bg-white rounded flex absolute top-8  right-12 flex-col gap-8 text-l  text-black p-10 md:flex md:flex-row md:text-xl md:text-fontcolor md:gap-10 md:bg-transparent md:p-2">
                     <li><a href="#residencies"  > Residencies</a></li>
                     <li><a href="#value" >Our Value</a></li>
                     <li><a href="#contact-us" >Contact Us</a></li>
