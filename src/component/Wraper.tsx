@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import Button from "./Button";
 import Data from "./Data";
-
+import { Map } from "../icon";
 
 
 const Wraper=()=>{
@@ -36,9 +36,9 @@ const Wraper=()=>{
                     </span>
                 </div>
                 
-                <div className=" w-full  bg-white  flex justify-between rounded  border-2 border-gray-400 p-2 ">
-                    <img src="./src/assets/map.svg" alt="" className="fill-blue-500" />
-                    <input className="  w-full " type="text" />
+                <div className=" w-full  bg-white  flex justify-between items-center rounded  border-2 border-gray-400 p-2 ">
+                    <Map/>
+                    <input className=" px-2 outline-none w-full " type="text" />
                     <Button text="Search"/>
                 </div>
                 <div className="flex  gap-4">

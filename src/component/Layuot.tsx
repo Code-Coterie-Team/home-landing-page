@@ -8,11 +8,11 @@ const Layout=(props:{children:ReactNode})=>{
     const location=useLocation()
     useEffect(() => {
         const hash = location.hash;
-        console.log(hash);
+        
         if (hash) {
             const element = document.querySelector(hash);
             if (element) {
-                element.scrollIntoView({ behavior: 'smooth' });
+                element.scrollIntoView({ behavior:'smooth' });
             }
         }
     }, [location]);
@@ -26,7 +26,8 @@ const Layout=(props:{children:ReactNode})=>{
                 <Wraper />
 
             </div>
-            {props.children}
+            <div className='p-12 flex flex-col gap-12'>{props.children}</div>
+            
         </div>
     )
 }

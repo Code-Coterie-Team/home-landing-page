@@ -10,7 +10,6 @@ const Data : React.FC<DataProps>=({count,subject})=>{
     useEffect(()=>{
       if(count=== 8900 && counter< 9000){
 
-        
         const timer=setTimeout(()=>{
             setCounter((prevcount)=>prevcount+1);
         },10);

@@ -6,7 +6,7 @@ const Value=()=>{
 
     return(
         <div className=" grid grid-cols-1 gap-4 md:grid-cols-2  md:gap-40" id="value">
-            <div className="border-8 border-gray-300 rounded-t-full    ">
+            <div className="border-8 border-gray-300  rounded-t-full    ">
                 <img src="./src/assets/value.png" alt=""  className="w-full h-full rounded-t-full"/>
             </div>
             <div className="flex flex-col gap-6   ">
