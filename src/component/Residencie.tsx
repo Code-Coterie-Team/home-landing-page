@@ -53,8 +53,9 @@ const Residencie =()=>{
             <div ref={scrollContainerRef} className="flex  gap-8 overflow-hidden w-full  ">
                 
                 
-                        { data ?.map((item: any) => (
+                        { data ?.map((item: any,index:number) => (
                             <PopulaRchoice
+                            key={index}
                             image={item.image}
                             name={item.name}
                             price={item.price}
