@@ -1,4 +1,4 @@
-import React, { useDebugValue, useState } from "react"
+import React, {  useState } from "react"
 import { useEffect } from "react"
 import { Plus } from "../icon";
 interface DataProps{

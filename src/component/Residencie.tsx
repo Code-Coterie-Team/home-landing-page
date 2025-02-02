@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import  { useRef } from "react";
 
 import { getAllData } from "../api";
 import PopulaRchoice from "./Popularchoice";

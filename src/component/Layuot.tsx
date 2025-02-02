@@ -1,6 +1,6 @@
 import Header from "./Header"
 import Wraper from "./Wraper";
-import { ReactNode, useEffect, useRef } from "react";
+import { ReactNode, useEffect} from "react";
 import { useLocation } from "react-router";
 
 
