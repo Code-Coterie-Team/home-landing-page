@@ -17,7 +17,7 @@ const Contact=()=>{
                     <ContactWay item={<Message/>} name='Message' />
                 </div>
             </div>
-            <div className="h-[32rem] rounded-t-full"><img src="./src/assets/contact.jpg" alt="" className="h-full w-full rounded-t-full" /></div>
+            <div className="h-[32rem] rounded-t-full"><img src="/contact.jpg" alt="" className="h-full w-full rounded-t-full" /></div>
         </div>
     )
 }

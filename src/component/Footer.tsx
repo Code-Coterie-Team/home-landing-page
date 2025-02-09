@@ -4,7 +4,7 @@ const Footer=()=>{
      return(
         <div className=" grid grid-cols-1 align-middle  md:grid-cols-2 md:gap-40  pt-10">
                <div className="flex flex-col gap-4 md:place-content-start">
-                    <div className="flex justify-center md:justify-start"><img src="./src/assets/logo2.png" alt="" /></div>
+                    <div className="flex justify-center md:justify-start"><img src="/logo2.png" alt="" /></div>
                     <p className="text-fontcolor text-center md:text-left">Our vision is to make all people <br />
                     the best place to live for them.</p>
      

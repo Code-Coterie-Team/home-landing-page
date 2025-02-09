@@ -50,7 +50,7 @@ const Wraper=()=>{
             
         </div>
         <div className=" h-full rounded-t-full border-8 border-stone-700 " style={imageStyle}>
-            <img src="./src/assets/hero-image.png" className="w-full h-full rounded-t-full " alt="" />
+            <img src="/hero-image.png" className="w-full h-full rounded-t-full " alt="" />
         </div>
     </div>
     )
